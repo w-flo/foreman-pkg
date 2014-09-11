@@ -1,0 +1,5 @@
+foreman (20140905-hgda3eaed-1) trusty; urgency=low
+
+  * Initial release for the PPA
+
+ -- Florian Will <florian.will@gmail.com>  Thu, 11 Sep 2014 19:51:10 +0200
