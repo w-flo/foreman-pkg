@@ -12,8 +12,8 @@ namespace Foreman
 	static class DataCache
 	{
 		//Still hardcoded. Needs to ask the user if it can't be found.
-		public static String FactorioDataPath = Path.Combine(Path.GetPathRoot(Application.StartupPath), "Program Files", "Factorio", "data");
-		public static String AppDataModPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Factorio", "mods");
+		public static String FactorioDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "factorio", "data");
+		public static String AppDataModPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "factorio", "mods");
 
 		public static Dictionary<String, Item> Items = new Dictionary<String, Item>();
 		public static Dictionary<String, Recipe> Recipes = new Dictionary<String, Recipe>();

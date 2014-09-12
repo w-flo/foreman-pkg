@@ -29,6 +29,7 @@ namespace Foreman
 					if (form.ShowDialog() == DialogResult.OK)
 					{
 						path = form.SelectedPath;
+						DataCache.AppDataModPath = Path.Combine(path, "mods");
 						path = Path.Combine(path, "data");
 					}
 					else
