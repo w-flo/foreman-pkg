@@ -50,7 +50,7 @@ namespace Foreman
 				{
 					errorMessage += String.Format(file + "({0})\n", DataCache.failedFiles[file].Message);
 				}
-				File.AppendAllText(Path.Combine(Application.StartupPath, "errorlog.txt"), errorMessage + "\n");
+				Console.Error.WriteLine(errorMessage);
 			}
 
 			rateOptionsDropDown.SelectedIndex = 0;
